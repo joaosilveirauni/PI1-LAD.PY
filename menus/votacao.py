@@ -1,6 +1,6 @@
-from submenu.sistemavotacao import submenu_votacao
-from submenu.resultados import resultados
-from submenu.auditoria import auditoria
+from menus.submenu.sistemavotacao import submenu_votacao
+from menus.submenu.resultados import resultados
+from menus.submenu.auditoria import auditoria
 
 def menu_votacao():
     opcao = ""
