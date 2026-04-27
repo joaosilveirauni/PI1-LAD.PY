@@ -46,7 +46,7 @@ def menu_gerenciamento():
                 print(f"Eleitor Encontrado:")
                 print(f"Nome: {eleitor['nome']}")
                 print(f"CPF: {eleitor['cpf']}")
-                print(f"Já votou? {'Sim' if eleitor['ja_votou'] else 'Não'}")
+                # print(f"Já votou? {'Sim' if eleitor['ja_votou'] else 'Não'}")
                 # fazer lógica de verificar se ja votou ou não
             else:
                 print("Eleitor não encontrado com este título.")
