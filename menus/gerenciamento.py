@@ -1,4 +1,5 @@
 from services.eleitor import listar_eleitores, cadastrar_eleitor, buscar_eleitor_por_titulo
+from services.validacoes import pedir_cpf, pedir_titulo
 
 
 def menu_gerenciamento():
@@ -17,8 +18,8 @@ def menu_gerenciamento():
             if opcao == "1":
                 print("\n--- CADASTRO DE ELEITOR ---")
                 nome = input("Nome completo: ")
-                cpf = input("CPF (apenas números): ")
-                titulo = input("Título de Eleitor: ")
+                cpf = pedir_cpf()
+                titulo = pedir_titulo()
                 chave = input("Chave de Acesso (senha): ")
 
                 sucesso = cadastrar_eleitor(nome, cpf, titulo, chave)
